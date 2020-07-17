@@ -11,8 +11,7 @@
 5. GET : /tasks
 6. PUT : /tasks/:id
 7. DELETE : /tasks/:id
-8. PATCH : /tasks/:id
-9. GET : /tasks/:id
+8. GET : /tasks/:id
 
 
 ## GLOBAL ERROR
