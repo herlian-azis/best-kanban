@@ -49,7 +49,7 @@ module.exports = class UserControllers {
                     id: data.id,
                     email: data.email
                 })
-                res.status(201).json(token)
+                res.status(201).json({token})
             }).catch(next)
     }
     static  googleLogin(req, res, next){
