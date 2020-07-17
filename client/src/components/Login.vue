@@ -61,7 +61,7 @@ export default {
             googleLogin(idToken){
                 axios({
                         method: "post",
-                        url: "http://localhost:3000/google",
+                        url: "https://tranquil-dusk-11569.herokuapp.com/google",
                         headers: {
                             idToken: idToken
                         }
@@ -83,7 +83,7 @@ export default {
       console.log(this.loginEmail)
       axios({
         method: "POST",
-        url: "http://localhost:3000/login",
+        url: "https://tranquil-dusk-11569.herokuapp.com/login",
         data: {
           email: this.loginEmail,
           password: this.loginPassword

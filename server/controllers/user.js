@@ -45,8 +45,11 @@ module.exports = class UserControllers {
                 }
             })
             .then((data) => {
-
-                res.status(201).json({ message: 'success register' })
+                const token = generate({
+                    id: data.id,
+                    email: data.email
+                })
+                res.status(201).json(token)
             }).catch(next)
     }
     static  googleLogin(req, res, next){

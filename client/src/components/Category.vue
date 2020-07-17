@@ -38,7 +38,7 @@ import ModalAdd from "./ModalAdd";
 import ModalEdit from "./ModalEdit";
 import axios from "axios";
 
-const myUrl = "http://localhost:3000";
+const myUrl = "https://tranquil-dusk-11569.herokuapp.com";
 export default {
   data() {
     return {
@@ -69,7 +69,7 @@ export default {
       console.log(data);
       axios({
         method: "post",
-        url: `http://localhost:3000/tasks`,
+        url: `https://tranquil-dusk-11569.herokuapp.com/tasks`,
         headers: {
           token: localStorage.token
         },

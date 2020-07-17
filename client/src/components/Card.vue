@@ -16,7 +16,7 @@
 </template>
 
 <script>
-const myUrl = "http://localhost:3000";
+const myUrl = "https://tranquil-dusk-11569.herokuapp.com";
 import axios from "axios";
 export default {
   props: ["task"],

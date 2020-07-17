@@ -10821,7 +10821,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-var myUrl = "http://localhost:3000";
+var myUrl = "https://tranquil-dusk-11569.herokuapp.com";
 var _default = {
   props: ["task"],
   methods: {
@@ -11656,7 +11656,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-var myUrl = "http://localhost:3000";
+var myUrl = "https://tranquil-dusk-11569.herokuapp.com";
 var _default = {
   data: function data() {
     return {
@@ -11688,7 +11688,7 @@ var _default = {
       console.log(data);
       (0, _axios.default)({
         method: "post",
-        url: "http://localhost:3000/tasks",
+        url: "https://tranquil-dusk-11569.herokuapp.com/tasks",
         headers: {
           token: localStorage.token
         },
@@ -11924,7 +11924,7 @@ var _default = {
 
       (0, _axios.default)({
         method: "get",
-        url: "http://localhost:3000/tasks",
+        url: "https://tranquil-dusk-11569.herokuapp.com/tasks",
         headers: {
           token: localStorage.token
         }
@@ -12063,7 +12063,7 @@ var _default = {
       var _this = this;
 
       this.$gAuth.signIn().then(function (responese) {
-        var dataGoogle = responese.getAuthResponse(); // console.log( dataGoogle)
+        var dataGoogle = responese.getAuthResponse();
 
         _this.googleLogin(dataGoogle.id_token);
       }).catch(function (err) {});
@@ -12072,10 +12072,9 @@ var _default = {
     googleLogin: function googleLogin(idToken) {
       var _this2 = this;
 
-      console.log(idToken, 'tokwnnnnnnnnnnnnnnnnnnIDDDDDDDDDDDDDDDD');
       (0, _axios.default)({
         method: "post",
-        url: "http://localhost:3000/google",
+        url: "https://tranquil-dusk-11569.herokuapp.com/google",
         headers: {
           idToken: idToken
         }
@@ -12088,23 +12087,6 @@ var _default = {
         console.log(err);
       });
     },
-    // signInWithGoogle() {
-    //   this.$gAuth
-    //     .signIn()
-    //     .then(result => {
-    //       const id_token = result.getAuthResponse().id_token;
-    //       axios({
-    //         method: "POST",
-    //         url: "http://localhost:3000/google",
-    //         data: { id_token }
-    //       }).then(res => {
-    //         this.SetDataAccount(res);
-    //       });
-    //     })
-    //     .catch(err => {
-    //       console.log(err);
-    //     });
-    // },
     showRegister: function showRegister() {
       this.$emit("ShowRegister");
     },
@@ -12114,14 +12096,13 @@ var _default = {
       console.log(this.loginEmail);
       (0, _axios.default)({
         method: "POST",
-        url: "http://localhost:3000/login",
+        url: "https://tranquil-dusk-11569.herokuapp.com/login",
         data: {
           email: this.loginEmail,
           password: this.loginPassword
         }
       }).then(function (result) {
-        console.log(result);
-
+        // console.log(result);
         _this3.SetDataAccount(result);
       }).catch(function (err) {
         console.log(err);
@@ -12356,14 +12337,14 @@ var _default = {
 
       (0, _axios.default)({
         method: "post",
-        url: "http://localhost:3000/register",
+        url: "https://tranquil-dusk-11569.herokuapp.com/register",
         data: {
           email: this.emailRegister,
           password: this.passwordRegister
         }
       }).then(function (result) {
-        localStorage.setItem("token", result.data.token);
-        console.log(result);
+        // localStorage.setItem("token", result.data.token);
+        console.log(result, 'dari rregister');
 
         _this.$emit("Register");
       }).catch(function (err) {
@@ -12547,7 +12528,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-var myUrl = "http://localhost:3000";
+var myUrl = "https://tranquil-dusk-11569.herokuapp.com";
 var _default = {
   name: "punyaAPP",
   data: function data() {
@@ -12866,7 +12847,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58600" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60471" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

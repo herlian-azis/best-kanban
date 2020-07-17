@@ -43,15 +43,15 @@ export default {
     proccessRegister() {
       Axios({
         method: "post",
-        url: "http://localhost:3000/register",
+        url: "https://tranquil-dusk-11569.herokuapp.com/register",
         data: {
           email: this.emailRegister,
           password: this.passwordRegister
         }
       })
         .then(result => {
-          localStorage.setItem("token", result.data.token);
-          console.log(result);
+          // localStorage.setItem("token", result.data.token);
+          console.log(result,'dari rregister');
           this.$emit("Register");
         })
         .catch(err => {

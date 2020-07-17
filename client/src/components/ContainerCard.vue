@@ -43,7 +43,7 @@ export default {
     getTask() {
       axios({
         method: "get",
-        url: "http://localhost:3000/tasks",
+        url: "https://tranquil-dusk-11569.herokuapp.com/tasks",
         headers: {
           token: localStorage.token
         }

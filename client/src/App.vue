@@ -20,7 +20,7 @@ import ContainerCard from "./components/ContainerCard";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Card from "./components/Card";
-const myUrl = "http://localhost:3000";
+const myUrl = "https://tranquil-dusk-11569.herokuapp.com";
 
 export default {
   name: "punyaAPP",
