@@ -50,7 +50,7 @@ export default {
         }
       })
         .then(result => {
-          // localStorage.setItem("token", result.data.token);
+          localStorage.setItem("token", result.data.token);
           console.log(result,'dari rregister');
           this.$emit("Register");
         })

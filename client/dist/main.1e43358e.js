@@ -12343,7 +12343,7 @@ var _default = {
           password: this.passwordRegister
         }
       }).then(function (result) {
-        // localStorage.setItem("token", result.data.token);
+        localStorage.setItem("token", result.data.token);
         console.log(result, 'dari rregister');
 
         _this.$emit("Register");
@@ -12847,7 +12847,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60471" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61893" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
