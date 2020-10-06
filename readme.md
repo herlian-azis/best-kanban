@@ -1,5 +1,9 @@
 # Kanban-Beta DOCUMENTATION
 
+https://kanban-beta-280708.web.app/ <<<<<<<<<<<<< FireBase
+
+https://tranquil-dusk-11569.herokuapp.com <<<<<<< Heroku
+
 > RESTful endpoint for todo's CRUD operation with JSON formatted response
 
 ## Restful Endpoints
